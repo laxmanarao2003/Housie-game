@@ -68,6 +68,10 @@ gnratebtn.addEventListener("click",()=>{
    }
    else{
       gnratebtn.innerHTML="All Numbers are Generated";
+      var speech = new SpeechSynthesisUtterance();
+      speech.lang = "en";
+      speech.text = "All Numbers are Generated press reset button to play again";
+      window.speechSynthesis.speak(speech);
    }
 });
 
