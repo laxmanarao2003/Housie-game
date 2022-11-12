@@ -30,7 +30,7 @@ const background_clr=(value)=>{
          }   
       }
    });
-   (history.innerHTML!="")?(history.innerHTML+=`>> ${value}`):history.innerHTML+=value;
+   (history.innerHTML!="")?(history.innerHTML+=` >> ${value}`):history.innerHTML+=value;
 }
 
 gnratebtn.addEventListener("click",()=>{
