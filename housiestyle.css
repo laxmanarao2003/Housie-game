@@ -1,0 +1,23 @@
+.bg_img
+{
+    background-image: url('.\\bg.png');
+    min-height: 880px;
+}
+.nmbr1::first-letter
+{
+   visibility: hidden;
+   text-align: center;
+   user-select: none;
+}
+.nmbr1
+{
+   user-select: none;
+}
+.nmbr2
+{
+   user-select: none;
+}
+#history
+{
+   overflow-wrap: break-word;
+}

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+    <head>
+      <title>
+         Housie-game
+      </title>
+      <meta name="author" content="Laxmana Rao">
+      <meta name="description" content="Kids-games">
+      <meta name="keywords" content="cards">
+      <meta name="viewport" content="initial-scale=1.0,width=device-width">
+      <meta http-equiv="X-UA-Compatible" content="ie=edge">
+      <meta http-equiv="refresh" content="">
+
+        <!----------------------------- FAVICON --------------------------------->
+      <link rel="icon" href=".\logo.png" type="image/x-icon">
+
+      <!-------------------------External CSS ---------------------------------->
+      <link rel="stylesheet" href=".\housiestyle.css" type="text/css">
+
+      <!----------------------------- Fontawesome-JS-CDN -------------------------->
+      <script src="https://kit.fontawesome.com/832f4883ab.js" crossorigin="anonymous"></script>
+
+      <!--------------------------- BOOTSTRAP-Css-CDN --------------------------->
+      <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+      <!-- --------------------- BOOTSTRAP-JavaScript-CDN ---------------------------->
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+
+      <!------------------------ BOOTSTRAP-JQuery-CDN -------------------------->
+      <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+   </head>
+<body> 
+    <!-------------------------- Display at Starting ---------------------->
+   <div class="container-fluid d-flex justify-content-center align-items-center bg_img" id="start">
+      <div>
+         <a href="#" class="btn btn-success" id="start_btn">
+            Start Game<span class="ms-2" id="btn_span"></span>
+         </a>
+      </div>
+   </div>
+   <script>
+      let btn_span=document.getElementById("btn_span");
+      let start_btn=document.getElementById("start_btn");
+      start_btn.addEventListener("click",()=>{
+         btn_span.classList.add("spinner-border");
+         btn_span.classList.add("spinner-border-sm");
+         btn_span.classList.add("text-primary");
+         setTimeout(()=>{
+            location.href=".\\housie.html";
+         },1500);
+      });
+   </script>
+</body>
+</html>
